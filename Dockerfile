@@ -1,4 +1,4 @@
-FROM maven:3.8.4-jdk-11
-WORKDIR /app
-COPY . ./
-ENTRYPOINT ["mvn","spring-boot:run"]
+FROM openjdk:11
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
