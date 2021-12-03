@@ -5,6 +5,7 @@
 ## Pre-requisites
 * JDK 11
 * Maven 3.8.4
+* Docker 19.03.8 `(Optional)`
 
 ## How to build
 
